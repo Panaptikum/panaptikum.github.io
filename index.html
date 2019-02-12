@@ -9,11 +9,6 @@
 </head>
 <body>
 
-<!--menu/mail
-<div id="mySidenav" class="sidenav">
-  <a href="#" onclick="copy(this)" title="click to copy" id="contact">shiroiki.hero@gmail.com</a>
- </div>
--->
  <!--left header-->
 <div class="header">
  <div class="middle-header">
@@ -21,9 +16,9 @@
  <div class="info3">Izabela Czarnocka</div>
  <!--menu/mail-->
  <div id="mySidenav" class="sidenav">
-   <a href="#" onclick="copy(this)" title="click to copy" id="contact">shiroiki.hero@gmail.com</a>
-  
+   <input class="shareUrl-input js-shareUrl mySidenav1 mySidenav2" type="text" readonly="readonly" title="click to copy" id="contact"/>
  </div>
+ 
  <!--slideshow-->
 <div class="slideshow-container info info2">
 
@@ -32,7 +27,7 @@
 </div>
 
 <div class="mySlides">
-  <p>Posiadam dobrą znajomość programów Adobe Illustrator/InDesign/Photoshop.</p>
+  <p>Posiadam dobrą znajomość programów Adobe: Illustrator, InDesign, Photoshop.</p>
   
 </div>
 
@@ -47,14 +42,15 @@
 </div>
 
 
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-
-
 </div>
  <div class="avatar"></div>
+ 
+ 
+<div class="arrows">
+ <a class="prev" onclick="plusSlides(-1)">❮</a>
+ <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
  </div>
 
  <!--RIGHT-->
@@ -102,6 +98,14 @@
   <div class="description">Projekt strony internetowej zajmującej się wypożyczaniem auto do ślubu wraz z ikonami aut. (Photoshop, Illustrator)</div>
  </div>
  
+  <div class="img-container">
+ 
+  <image src="images/drawing.jpg" class="content img" style="width:100%; height:auto">
+  <image src="images/anim1.gif" class="content img" style="width:100%; height:auto">
+  <image src="images/anim2.gif" class="content img" style="width:100%; height:auto">
+  <div class="description">Hobbystycznie zajmuję się tworzeniem illustracji oraz animacją. Używam programów takich jak Photoshop, Paint Tool Sai, Krita, Premiere Pro.</div>
+ </div>
+ 
  </div>
  
  <!--modal-->
@@ -111,11 +115,12 @@
  <div id="caption"></div>
 </div>
 
-
+<button onclick="topFunction()" id="topBtn" title="back to the top"></button>
 
 <script src="modal.js"></script>
 <script src="slideshow.js"></script>
 <script src="click-to-copy.js"></script>
+<script src="top-btn.js"></script>
 
 </body>
 </html>

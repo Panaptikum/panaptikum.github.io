@@ -24,6 +24,13 @@ img {
 	position: fixed;
 
 }
+@media screen and (max-width:800px)  {
+	.header {
+		height:100vh;
+		width:100%;
+		position:absolute;
+	}
+}
 .middle-header {
 	height:100%;
 	width:50%;
@@ -32,6 +39,7 @@ img {
 	transform: translate(-50%, 0);
 	position:absolute;
 }
+
 .avatar {
 	height:200px;
 	width:200px;
@@ -56,9 +64,20 @@ img {
 	margin-top: 50vh;
 	max-width: 20vh;
 }
+@media screen and (max-width:600px)  {
+	.info {
+		margin-top:60vh;
+	}
+}
+
 .info2 {
 	padding-top:40px;
 	color:white;
+}
+@media screen and (max-width:600px)  {
+	.info2 {
+		padding-top:20px;
+	}
 }
 .info3 {
 	color:white;
@@ -68,6 +87,11 @@ img {
 	transform: translate(-50%, 0);
 	text-align:center;
 }
+@media screen and (max-width:600px)  {
+	.info3 {
+		margin-top:6vh;
+	}
+}
 .main-container {
 	height:auto;
 	width:40%;
@@ -75,6 +99,14 @@ img {
 	margin-top: 0;
 	margin-bottom:50px;
 	position: absolute;
+}
+@media screen and (max-width:800px)  {
+	.main-container {
+		width:60%;
+		margin-top:100vh;
+		margin-left: 50%;
+	    transform: translate(-50%, 0);
+	}
 }
 .img-container {
 	background-color: #70818B;
@@ -113,6 +145,7 @@ img {
 	padding-top: 20px;
 	margin: auto;
 	display: block;
+	max-width:90%;
 	max-height: 90%;
 	height: auto;
 }
@@ -130,14 +163,38 @@ img {
 	transform: translateZ(0);
 }
 /*slideshow*/
+.arrows {
+	position:absolute;
+	margin-top:26vh;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+}
+@media screen and (max-width:600px)  {
+	.arrows {
+		margin-top:35vh;
+	}
+}
 .prev, .next {
   cursor: pointer;
-  width: auto;
   color: #888;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  margin-top:20vh;
+}
+.prev {
+	margin-right:20px;
+}
+@media screen and (max-width:800px)  {
+	.prev {
+		margin-right:10vh;
+	}
+}
+@media screen and (max-width:600px)  {
+	.prev {
+		margin-right:40px;
+	}
 }
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -149,16 +206,50 @@ img {
 	position:absolute;
 	margin-left: 50%;
 	transform: translate(-50%, 0);
+	
 }
-#mySidenav a {
+.mySidenav1 {
     transition: 0.3s;
     text-decoration: none;
     font-size: 12px;
     color: white;
 	opacity: 0.2;
+	background: transparent;
+	cursor: pointer;
+	border:none;
+	text-align:center;
 }
 
-#mySidenav a:hover {
+.mySidenav2:hover {
     
 	opacity: 1;
+}
+
+
+/* Animation - Go from zero to full opacity */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*top button */
+#topBtn {
+    animation: fadeEffect 5s;
+	display: none;
+}
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 98;
+    border: none;
+    outline: none;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 30px 30px 0px 30px; 
+    font-size: 18px;
+	transform: rotate(-135deg);
 }

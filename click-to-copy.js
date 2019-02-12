@@ -1,10 +1,23 @@
-//click to copy
+(function() {
+    
+    // Create reusable copy fn
+    function copy(element) {
+        
+        return function() {
+          document.execCommand('copy', false, element.select());
+        }
+    }
+    
+    // Grab shareUrl element
+    var shareUrl = document.querySelector('.js-shareUrl');
 
-function copy(that){
-var inp =document.createElement('input');
-document.body.appendChild(inp)
-inp.value =that.textContent
-inp.select();
-document.execCommand('copy',false);
-inp.remove();
-}
+    // Create new instance of copy, passing in shareUrl element
+    var copyShareUrl = copy(shareUrl);
+    
+    // Set value via markup or JS
+    shareUrl.value = "czarnocka.uo@gmail.com";
+  
+    // Click listener with copyShareUrl handler
+    shareUrl.addEventListener('click', copyShareUrl, false);
+  
+}());
