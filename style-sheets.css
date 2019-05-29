@@ -3,7 +3,7 @@
 }
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Lato', sans-serif;
 	background-color: rgb(140, 140, 140, 0.2);
 }
 html {
@@ -96,9 +96,11 @@ img {
 	height:auto;
 	width:40%;
 	margin-left:35%;
-	margin-top: 0;
+	margin-top: 50px;
 	margin-bottom:50px;
 	position: absolute;
+	column-count: 2;
+	column-gap: 75px;
 }
 @media screen and (max-width:800px)  {
 	.main-container {
@@ -106,15 +108,18 @@ img {
 		margin-top:100vh;
 		margin-left: 50%;
 	    transform: translate(-50%, 0);
+		column-count: 1;
 	}
 }
 .img-container {
 	background-color: #70818B;
 	margin-top:50px;
-	height: 80%;
-	width: 80%;
+	margin-bottom: 0px;
+	height: 90%;
+	width: 90%;
 	margin-left: 50%;
 	transform: translate(-50%, 0);
+	
 }
 .description {
 	text-align:center;
