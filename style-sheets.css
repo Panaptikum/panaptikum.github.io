@@ -113,6 +113,11 @@ img {
 	transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
+@media screen and (max-width:600px)  {
+	.avatar {
+		animation-play-state: paused;
+	}
+}
 .info {
 	color: white;
 	position: absolute;
