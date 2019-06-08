@@ -45,13 +45,13 @@ img {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 40%;
 	margin-top:0;
 }
 @media screen and (max-width:800px)  {
 	.parallax {
 		background-attachment: local;
-		
+		background-size: 70%;
 		margin-left:0;
 	}
 }
