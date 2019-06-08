@@ -85,8 +85,6 @@ img {
 	height:180px;
 	width:180px;
 	margin-top:3vh;
-	background-color:black;
-	border-radius: 150px;
 	background-image: url(images/logowhite.png);
 	background-position: center;
     background-repeat: no-repeat;
@@ -116,6 +114,14 @@ img {
 @media screen and (max-width:600px)  {
 	.avatar {
 		animation-play-state: paused;
+	}
+}
+@media screen and (max-width:450px)  {
+	.avatar {
+		margin-top:5vh;
+		margin-left: 3vh;
+		height:140px;
+	    width:140px;
 	}
 }
 .info {
@@ -155,6 +161,7 @@ img {
 	    text-align:center;
 	}
 }
+
 .main-container {
 	height:auto;
 	width:50%;
@@ -274,6 +281,12 @@ img {
 	position:absolute;
 	margin-left: 30vh;
 	
+}
+@media screen and (max-width:450px)  {
+	.sidenav {
+	    margin-left: 28vh;
+	    text-align:center;
+	}
 }
 .mySidenav1 {
     transition: 0.3s;
