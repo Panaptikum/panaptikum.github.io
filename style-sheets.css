@@ -14,8 +14,28 @@ html {
 img {
     max-width: 100%;
     height: auto;
-
+	transform: translateZ(0);
+    backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	filter: blur(0);
+	-webkit-filter: blur(0);
 }
+.content {
+	filter: saturate; /* IE6-9 */
+    -webkit-filter: saturate(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    transition: filter 1s;
+}
+.content:hover {
+	-webkit-filter: saturate(3);
+}
+@media screen and (max-width:800px)  {
+	.content:hover {
+		filter: brightness(1);
+	}
+}
+
+
+
 .topmenu {
 	position: fixed;
 	top:0px;
