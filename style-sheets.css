@@ -539,6 +539,8 @@ img {
   text-transform: capitalize;
   padding: 0.7em 0;
   z-index:-1;
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
 
 
@@ -547,6 +549,8 @@ img {
   text-align: center;
   margin-bottom: 10px;
   z-index:-1;
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
 
 .content {
@@ -569,10 +573,13 @@ img {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  filter: blur(0);
+  -webkit-filter: blur(0);
 }
 
 .content:hover .content-overlay:hover{
   opacity: 1;
+  
 }
 
 .content-image{
@@ -594,13 +601,16 @@ img {
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  transform:translateZ(0);
+  
 }
 
 .content:hover .content-details{
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: -4%;
   opacity: 1;
   pointer-events: none;
+
 }
 
 .content-details h3{
@@ -619,4 +629,5 @@ img {
 
 .fadeIn-bottom{
   top: 80%;
+  
 }
