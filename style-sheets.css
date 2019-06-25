@@ -514,7 +514,10 @@ img {
   }
 }
 
-
+@media only screen and (max-width: 550px) {
+  .tiles {
+    overflow-x: auto;
+  }
   .tiles .tile-item {
     width: auto;
     flex: 1 0 auto;
