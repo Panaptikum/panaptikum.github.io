@@ -53,12 +53,28 @@ img {
 		position:absolute;
 	}
 }
-
+#logovid {
+	z-index:1;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	height:50%;
+	overflow:hidden;
+	margin-top:18vh;
+	
+}
+.logocontainer {
+	height:50vh;
+	width:30vh;
+	overflow:hidden;
+	display:block;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	padding-top:20vh;
+}
 
 .parallax { 
     /* The image used */
 	background: black;
-    background-image: url("images/logogif.gif");
     /* Set a specific height */
     height: 100vh; 
     /* Create the parallax scrolling effect */
@@ -68,6 +84,7 @@ img {
     background-size: 30%;
 	margin-top:0;
 	z-index:-1;
+	overflow:hidden;
 }
 @media screen and (max-width:800px)  {
 	.parallax {
@@ -157,6 +174,12 @@ img {
 	.info3 {
 	    margin-left: 30vh;
 	    text-align:center;
+	}
+}
+@media screen and (max-width:500px)  {
+	.info3 {
+		margin-top:4vh;
+		margin-left:50%;
 	}
 }
 
@@ -283,9 +306,10 @@ img {
 	margin-left: 30vh;
 	
 }
-@media screen and (max-width:450px)  {
+@media screen and (max-width:500px)  {
 	.sidenav {
-	    margin-left: 28vh;
+	    margin-left: 20%;
+		margin-top:25vh;
 	    text-align:center;
 	}
 }
@@ -601,7 +625,16 @@ img {
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   transform:translateZ(0);
+
   
+}
+
+@media only screen and (max-width: 500px) {
+	.content-details {
+		left:0%;
+		padding-left: 0em;
+        padding-right: 0em;
+	}
 }
 
 .content:hover .content-details{
