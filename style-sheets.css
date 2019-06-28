@@ -437,7 +437,8 @@ img {
 
 @media screen and (max-width: 800px) {
 	.overlay-content2 {
-		top:2%;
+		top:1%;
+		margin-top:0;
 	}
 }
 
@@ -464,12 +465,19 @@ img {
 }
 @media screen and (max-width: 600px) {
 	  .overlay a {
-		  font-size: 15px
+		  font-size: 15px;
+		  padding:8px;
+		  
+	  }
+}
+@media screen and (max-width: 400px) {
+	  .overlay a {
+		  font-size: 11.5px;
+		  padding:5px;
 	  }
 }
 @media screen and (max-width: 600px) {
   .overlay {
-  font-size: 20px;
   top: 15px;
   right: 35px;
   }
