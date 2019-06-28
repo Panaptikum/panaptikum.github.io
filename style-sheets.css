@@ -478,7 +478,7 @@ img {
 }
 @media screen and (max-width: 600px) {
   .overlay {
-  top: 15px;
+
   right: 35px;
   }
 }
