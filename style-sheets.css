@@ -308,8 +308,8 @@ img {
 }
 @media screen and (max-width:500px)  {
 	.sidenav {
-	    margin-left: 20%;
-		margin-top:25vh;
+	    margin-left: 30%;
+		margin-top:30vh;
 	    text-align:center;
 	}
 }
