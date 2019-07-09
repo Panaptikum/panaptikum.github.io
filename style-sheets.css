@@ -392,6 +392,11 @@ img {
 	margin-left:80%;
 	margin-top:4vh;
 }
+.menuopen3 {
+	margin-left: 70%;
+	text-decoration: none;
+}
+
 .omnie {
 	cursor: pointer;
 }
@@ -504,6 +509,13 @@ img {
 	margin-left:80%;
 	margin-top:10vh;
   }
+}
+
+@media screen and (max-width: 700px) {
+	.menuopen3 {
+		margin-left:60%;
+		margin-top:10vh;
+	}
 }
 .closebtn {
 	width:100%;
