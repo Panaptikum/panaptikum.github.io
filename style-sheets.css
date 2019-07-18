@@ -413,6 +413,10 @@ img {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   cursor: pointer;
+  position: absolute;
+  margin-left: 17px;
+  margin-top: 12px;
+  pointer-events: none;
 }
 .overlay {
   height: 0%;
@@ -798,3 +802,41 @@ img {
 	opacity: 0;	
 	transform: scale(0.1, 1);
 }
+
+
+/*icon animation */
+
+.icon{
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	overflow: hidden;
+	background: black;
+	z-index: -1;
+}
+	.icon:before, .icon:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		transition: all 0.25s ease;
+		border-radius: 60px;
+	}
+	
+
+
+
+	.icon-fill:before{
+		transition-duration: 0.5s;
+		box-shadow: inset 0 0 0 1px white;
+	}
+	.icon-fill:hover::before{
+		box-shadow: inset 0 0 0 60px white;
+	}
+
+
